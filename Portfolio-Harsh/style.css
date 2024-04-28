@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(background.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .box{
+    height: 86vh;
+    width: 75%;
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(25px);
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
+}
+.container::after{
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: linear-gradient( #c1d9fb,#cbd1f8);
+    transform: translate(490px,150px);
+}
+.container .box nav{
+    height: 7%;
+    width: 95%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+    padding: 20px;
+}
+.container .box nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+    list-style: none;
+}
+.container .box nav ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #242329;
+    transition: 0.3s
+}
+.container .box nav ul li a:hover{
+    color: #7c8bd1;
+}
+.container .box nav .logo{
+    font-size: 35px;
+    color: #242329;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+.container .box .contains{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 8%;
+    padding-left: 80px;
+}
+.contains .section-1{
+    position: relative;
+    width: 40%;
+}
+.contains .section-1 h1{
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #242329;
+}
+.wrapper {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+.contains .section-1 h3{
+    color: #6f34fe;
+    margin-bottom: 10px;
+    font-size: 24px;
+    
+     width: 22ch;
+        animation: typing 4s steps(20), blink .10s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-family: monospace;
+        font-size: 2em;
+      }
+      
+      @keyframes typing {
+        from {
+          width: 0
+        }
+      }
+          
+      @keyframes blink {
+        50% {
+          border-color: transparent
+        }
+      }
+
+.contains .section-1 p{
+    font-size: 18px;
+    color: #505052;
+    margin-bottom: 50px;
+}
+.contains .section-1 .btn{
+    padding: 15px 20px;
+    background-color: #6f34fe;
+    border: 1px solid #6f34fe;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.contains .section-1 .btn:hover{
+    color: #6f34fe;
+    transition: 0.3s;
+    background-color: #cdddf3;
+    border: 1px solid ;
+}
+.contains .section-2{
+    border-radius: 50%;
+}
+.contains .section-2 img{
+    position: inherit;;
+    top: 3rem;
+    width: 25vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.contains .section-3{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    left: 10px;
+    top: 30%;
+}
+.contains .section-3 a i{
+    font-size: 25px;
+    cursor: pointer;
+    color: #7c8bd1;
+    transition: 0.3s;
+}
+.contains .section-3 i:hover{
+    color: #6f34fe;
+    transform: scale(1.2)translateY(-10px);
+background-color: black;
+
+box-shadow: 0 0 25px var(black);
+}
+  .contact{
+    background: url(background.png);
+  }
+  .contact h2{
+    margin-bottom: 3rem;
+    color: white;
+  }
+.contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: var(black);
+    background:var(skyblue);
+    border-radius: 2rem;
+    border: 2px solid var(blue);
+    margin: 1.5rem 0;
+    resize: none;
+
+}
+.contact form .btn{
+padding: 15px 20px;
+    background-color: #6f34fe;
+    border: 1px solid #6f34fe;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.contains .section-1 .btn:hover{
+    color: #6f34fe;
+    transition: 0.3s;
+    background-color: #cdddf3;
+    border: 1px solid ;
+}
+.footer {
+
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color:rgb(186, 232, 241);
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    background-color: skyblue ;
+
+}
+.footer .social a{
+ font-size: 25px;
+    color: black;
+ border: 2px solid var(black);
+ 
+ width: 42px;
+ height: 42px;
+ line-height: 42px;
+ display:inline-block;
+ text-align: center;
+ border-radius: 50%;
+ margin: 0 10px;
+ transition: 0.3s ease-in-out;
+
+}
+.footer .social a:hover{
+transform: scale(1.2)translateY(-10px);
+background-color: black;
+color: white;
+box-shadow: 0 0 25px var(black);
+}
+
+.footer ul{
+margin-top: 0;
+padding: 0;
+font-size: 18px;
+line-height: 1.6;
+margin-bottom: 0;
+text-align: center;
+}
+.footer ul li a{
+    color:black;
+    border-color: 3px solid transparent ;
+    transition: 3s ease-in-out;
+
+
+
+}
+
+
+
